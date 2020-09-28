@@ -14,7 +14,6 @@ The 4th edition of the book as out now in 2020, and thus we are updating the cod
 - More projects using external packages (tensorflow, etc.).
 
 
-
 # Structure of the Project
 
 When complete, this project will have Python implementations for all the pseudocode algorithms in the book, as well as tests and examples of use. For each major topic, such as `search`, we provide the following  files:
@@ -42,13 +41,13 @@ Features from Python 3.6 and 3.7 that we will be using for this version of the c
 
 To download the repository:
 
-`git clone https://github.com/aimacode/aima-python.git`
+`git clone https://github.com/Andrew-Wyn/aima-python.git`
 
 Then you need to install the basic dependencies to run the project on your system:
 
 ```
 cd aima-python
-pip install -r requirements.txt
+pipenv install --python 3.7 -r requirements.txt
 ```
 
 You also need to fetch the datasets from the [`aima-data`](https://github.com/aimacode/aima-data) repository:
@@ -60,11 +59,11 @@ git submodule update
 
 Wait for the datasets to download, it may take a while. Once they are downloaded, you need to install `pytest`, so that you can run the test suite:
 
-`pip install pytest`
+`pipenv install pytest`
 
 Then to run the tests:
 
-`py.test`
+`pipenv run py.test`
 
 And you are good to go!
 
