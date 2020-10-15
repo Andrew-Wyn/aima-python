@@ -774,7 +774,15 @@ class PriorityQueue:
             del self.heap[[item == key for _, item in self.heap].index(True)]
         except ValueError:
             raise KeyError(str(key) + " is not in the priority queue")
-        heapq.heapify(self.heap)
+        heapq.heapify(self.heap)    
+
+    def get_item(self, key):
+        """Returns the first node associated with key in PriorityQueue.
+        Raises KeyError if key is not present."""
+        for _, item in self.heap:
+            if item == key:
+                return item
+        raiseKeyError(str(key)+" is not in the priority queue")
 
 
 # ______________________________________________________________________________
