@@ -68,6 +68,15 @@ Then to run the tests:
 And you are good to go!
 
 
+# Run Scripts
+
+To run .py file inside the __Workdir with reference to the aima library packages you need to do type:
+
+`make run TARGET=path-to/name_file.py`
+
+where the `path-to/name_file.py` is a file under the `__WorkDir/` folder.
+
+
 # Index of Algorithms
 
 Here is a table of algorithms, the figure, name of the algorithm in the book and in the repository, and the file where they are implemented in the repository. This chart was made for the third edition of the book and is being updated for the upcoming fourth edition. Empty implementations are a good place for contributors to look for an issue. The [aima-pseudocode](https://github.com/aimacode/aima-pseudocode) project describes all the algorithms from the book. An asterisk next to the file name denotes the algorithm is not fully implemented. Another great place for contributors to start is by adding tests and writing on the notebooks. You can see which algorithms have tests and notebook sections below. If the algorithm you want to work on is covered, don't worry! You can still add more tests and provide some examples of use in the notebook!
